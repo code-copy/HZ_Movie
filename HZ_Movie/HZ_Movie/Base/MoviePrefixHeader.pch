@@ -1,0 +1,20 @@
+//
+//  MoviePrefixHeader.pch
+//  HZ_Movie
+//
+//  Created by king_linfu on 15-1-30.
+//  Copyright (c) 2015年 无线互联3G学院. All rights reserved.
+//
+
+#ifndef HZ_Movie_MoviePrefixHeader_pch
+#define HZ_Movie_MoviePrefixHeader_pch
+
+#import "Common.h"
+#import "BaseViewController.h"
+#import "UIImageView+WebCache.h"
+#import "UIViewExt.h"
+#import "RequestData.h"
+
+#endif
+
+

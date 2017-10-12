@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="6254" systemVersion="13F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6247"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="vWb-3d-AbD" customClass="MovieDetailHeaderView">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="260"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="TW6-gi-0Xu">
+                    <rect key="frame" x="10" y="172" width="300" height="80"/>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                </scrollView>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="HKo-bP-5dQ">
+                    <rect key="frame" x="10" y="8" width="110" height="150"/>
+                    <color key="backgroundColor" red="0.43529411759999997" green="0.4431372549" blue="0.47450980390000003" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="110" id="uUc-WY-gZL"/>
+                        <constraint firstAttribute="height" constant="150" id="yp1-tg-1uG"/>
+                    </constraints>
+                </imageView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="电影标题" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="l9I-RH-nqd">
+                    <rect key="frame" x="127" y="18" width="182" height="24"/>
+                    <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
+                    <color key="textColor" red="0.62745100259999997" green="0.37254902719999999" blue="0.1176470667" alpha="1" colorSpace="deviceRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="导演" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="y8Q-MI-j8g">
+                    <rect key="frame" x="128" y="50" width="181" height="21"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                    <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="主演" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="IjH-c7-rm7">
+                    <rect key="frame" x="127" y="77" width="181" height="21"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                    <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="类型" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="b9M-oX-L2a">
+                    <rect key="frame" x="127" y="106" width="181" height="21"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                    <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="年份" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6Rj-tY-wpw">
+                    <rect key="frame" x="127" y="136" width="181" height="21"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                    <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="b9M-oX-L2a" firstAttribute="top" secondItem="vWb-3d-AbD" secondAttribute="top" constant="106" id="169-tO-qYI"/>
+                <constraint firstItem="b9M-oX-L2a" firstAttribute="leading" secondItem="vWb-3d-AbD" secondAttribute="leading" constant="127" id="1nf-3E-ICM"/>
+                <constraint firstAttribute="trailing" secondItem="b9M-oX-L2a" secondAttribute="trailing" constant="12" id="49D-cx-ohW"/>
+                <constraint firstItem="TW6-gi-0Xu" firstAttribute="top" secondItem="6Rj-tY-wpw" secondAttribute="bottom" constant="15" id="7dz-hF-bev"/>
+                <constraint firstAttribute="trailing" secondItem="6Rj-tY-wpw" secondAttribute="trailing" constant="12" id="B5b-ns-2gq"/>
+                <constraint firstItem="TW6-gi-0Xu" firstAttribute="leading" secondItem="vWb-3d-AbD" secondAttribute="leading" constant="10" id="FPR-MG-HWN"/>
+                <constraint firstItem="6Rj-tY-wpw" firstAttribute="top" secondItem="b9M-oX-L2a" secondAttribute="bottom" constant="9" id="HDz-iY-V9Z"/>
+                <constraint firstItem="IjH-c7-rm7" firstAttribute="leading" secondItem="vWb-3d-AbD" secondAttribute="leading" constant="127" id="IKu-jS-wen"/>
+                <constraint firstItem="l9I-RH-nqd" firstAttribute="leading" secondItem="vWb-3d-AbD" secondAttribute="leading" constant="127" id="NWT-Ns-9J2"/>
+                <constraint firstAttribute="bottom" secondItem="TW6-gi-0Xu" secondAttribute="bottom" constant="8" id="OSo-22-GOc"/>
+                <constraint firstItem="TW6-gi-0Xu" firstAttribute="top" secondItem="HKo-bP-5dQ" secondAttribute="bottom" constant="14" id="Plv-JS-jvW"/>
+                <constraint firstAttribute="trailing" secondItem="y8Q-MI-j8g" secondAttribute="trailing" constant="11" id="Y3p-c2-Edk"/>
+                <constraint firstItem="HKo-bP-5dQ" firstAttribute="top" secondItem="vWb-3d-AbD" secondAttribute="top" constant="8" id="a5H-ZW-91e"/>
+                <constraint firstItem="y8Q-MI-j8g" firstAttribute="leading" secondItem="vWb-3d-AbD" secondAttribute="leading" constant="128" id="f7S-cf-1QY"/>
+                <constraint firstItem="IjH-c7-rm7" firstAttribute="top" secondItem="y8Q-MI-j8g" secondAttribute="bottom" constant="6" id="fcz-u3-EI9"/>
+                <constraint firstAttribute="trailing" secondItem="IjH-c7-rm7" secondAttribute="trailing" constant="12" id="gh1-6k-TTU"/>
+                <constraint firstItem="IjH-c7-rm7" firstAttribute="top" secondItem="vWb-3d-AbD" secondAttribute="top" constant="77" id="hov-di-a0D"/>
+                <constraint firstItem="HKo-bP-5dQ" firstAttribute="leading" secondItem="vWb-3d-AbD" secondAttribute="leading" constant="10" id="iFf-o3-7Na"/>
+                <constraint firstItem="6Rj-tY-wpw" firstAttribute="top" secondItem="vWb-3d-AbD" secondAttribute="top" constant="136" id="iaW-mS-Q0I"/>
+                <constraint firstItem="y8Q-MI-j8g" firstAttribute="top" secondItem="vWb-3d-AbD" secondAttribute="top" constant="50" id="jen-cj-PMw"/>
+                <constraint firstItem="b9M-oX-L2a" firstAttribute="top" secondItem="IjH-c7-rm7" secondAttribute="bottom" constant="8" id="oJF-Gf-dAN"/>
+                <constraint firstAttribute="trailing" secondItem="TW6-gi-0Xu" secondAttribute="trailing" constant="10" id="qC3-e8-8nk"/>
+                <constraint firstItem="l9I-RH-nqd" firstAttribute="top" secondItem="vWb-3d-AbD" secondAttribute="top" constant="18" id="qoE-Pl-fPq"/>
+                <constraint firstAttribute="trailing" secondItem="l9I-RH-nqd" secondAttribute="trailing" constant="11" id="uNe-iH-IPn"/>
+                <constraint firstItem="6Rj-tY-wpw" firstAttribute="leading" secondItem="vWb-3d-AbD" secondAttribute="leading" constant="127" id="wZ7-vp-RoO"/>
+            </constraints>
+            <nil key="simulatedStatusBarMetrics"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="_actorName" destination="IjH-c7-rm7" id="yU5-td-dbA"/>
+                <outlet property="_directName" destination="y8Q-MI-j8g" id="SQZ-Ly-8lT"/>
+                <outlet property="_movieImage" destination="HKo-bP-5dQ" id="hOV-td-STp"/>
+                <outlet property="_movieTitle" destination="l9I-RH-nqd" id="xg3-j3-pBL"/>
+                <outlet property="_movieType" destination="b9M-oX-L2a" id="O4E-Tm-bel"/>
+                <outlet property="_movieYear" destination="6Rj-tY-wpw" id="hsJ-sT-tHA"/>
+                <outlet property="_scrollView" destination="TW6-gi-0Xu" id="jjq-8E-QSC"/>
+            </connections>
+            <point key="canvasLocation" x="302" y="202"/>
+        </view>
+    </objects>
+    <simulatedMetricsContainer key="defaultSimulatedMetrics">
+        <simulatedStatusBarMetrics key="statusBar"/>
+        <simulatedOrientationMetrics key="orientation"/>
+        <simulatedScreenMetrics key="destination" type="retina4"/>
+    </simulatedMetricsContainer>
+</document>
